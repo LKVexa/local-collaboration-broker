@@ -1,0 +1,28 @@
+{
+ "runs": [
+  {
+   "check": "baseline unit suite (0.1.0-partial)",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS (11 tests)"
+  },
+  {
+   "check": "candidate unit suite (0.1.1-partial, final bytes)",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS (18 tests)"
+  },
+  {
+   "check": "live defect probes P1-P7 (aliasing, error-contract, NaN)",
+   "result": "all reproduced on baseline; all fixed and re-verified on candidate"
+  },
+  {
+   "check": "Windows-native launch",
+   "result": "UNRUN - no Windows runtime this session"
+  },
+  {
+   "check": "independent review",
+   "result": "NOT PERFORMED"
+  }
+ ],
+ "executor": "claude cowork session 01SaQzDRzMFXvRabmCC6JDJD",
+ "refreshed_at": "2026-09-14T19:10:18.970655+00:00"
+}
