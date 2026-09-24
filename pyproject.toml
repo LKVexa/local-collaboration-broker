@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=78,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-collaboration-broker"
+version = "0.1.2a1"
+description = "Bounded local message ordering, content-aware idempotency and acknowledgment tracking"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD-PARTY-NOTICES.md"]
+authors = [{name = "RUSSELL PHILIP SMITHSON"}]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["e08*"]
